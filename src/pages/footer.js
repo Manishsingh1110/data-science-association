@@ -68,7 +68,7 @@ const Footer = () => {
                         <div className="copyright text-gray-500 md:py-4 py-10">
                             &copy; Copyright <strong><span className='text-slate-600 text-xl font-bold'>DSSA</span></strong>. All Rights Reserved
                             <div className="credits">
-                                Designed by <a href="/">DSSA</a>
+                                Designed by <a href="/">Mayur Jadhav , Manish Singh & Tejas Mayekar</a>
                             </div>
                         </div>
                     </div>

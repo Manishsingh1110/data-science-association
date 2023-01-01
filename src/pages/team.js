@@ -29,7 +29,7 @@ const Teams = () => {
           "src": "https://i.postimg.cc/jqpFZrtn/cultural-head.jpg",
           "name": "Ms. Deepti Bare",
           "designation": "Cultural Head of DSSA.",
-          "category": "main"
+          "category": "cultural"
       },
         {
             "src": "https://i.postimg.cc/Mp4Zr4LM/cultural-member1.jpg",
@@ -53,24 +53,24 @@ const Teams = () => {
             "src": "https://i.postimg.cc/d0yQM6MW/magazine1.jpg",
             "name": "Ms.Srushti Sonawane",
             "designation": " Magizine Co-ordinators of DSSA",
-            "category": "main"
+            "category": "magzine"
         },
         {
             "src": "https://i.postimg.cc/SQrSpj5p/magazine2.jpg",
             "name": "Ms.Shaleha Khan",
             "designation": " Magizine Co-ordinators of DSSA",
-            "category": "main"
+            "category": "magzine"
         }, {
             "src": "https://i.postimg.cc/9MHmc9Cc/pr-marketing.jpg",
             "name": "Mr.Rushikesh Wani",
             "designation": "Promotional Marketing Head of DSSA",
-            "category": "main"
+            "category": "magzine"
         },
         {
             "src": "https://i.postimg.cc/x1rNXX0F/technical-head.jpg",
             "name": "Mr. Tejas Mayekar",
             "designation": "Technical Head of DSSA",
-            "category": "main"
+            "category": "technical"
         },
         
         {
@@ -126,7 +126,7 @@ const Teams = () => {
                     </div>
                     <ul className="portfolio-flters justify-evenly pb-10 px-5 md:px-20 lg:px-80 flex flex-wrap" data-aos="fade-up" data-aos-delay="100">
                         <button type="button" onClick={() => setall()} className="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-1 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">All</button>
-                        <button type="button" onClick={() => filteritem("main")} className="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring1 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">Head team</button>
+                        <button type="button" onClick={() => filteritem("magzine")} className="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring1 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">Social media team</button>
                         <button type="button" onClick={() => filteritem("cultural")} className="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring1 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">Cultural team</button>
                         <button type="button" onClick={() => filteritem("sports")} className="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring1 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">Sports team</button>
                         <button type="button" onClick={() => filteritem("technical")} className="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring1 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">Technical team</button>
