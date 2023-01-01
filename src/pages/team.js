@@ -66,7 +66,6 @@ const Teams = () => {
             "designation": "Promotional Marketing Head of DSSA",
             "category": "main"
         },
-        
         {
             "src": "https://i.postimg.cc/x1rNXX0F/technical-head.jpg",
             "name": "Mr. Tejas Mayekar",

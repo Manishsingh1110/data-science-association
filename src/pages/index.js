@@ -27,13 +27,13 @@ export default function Home() {
   }, [])
   var Team = [
     {
-        "src": "https://i.postimg.cc/VvDm9HMN/president.jpg",
+        "src": "../assets/team/president.jpg",
         "name": "Mr.Yash Gupta",
         "designation": "PRESIDENT of DSSA.",
         "category": "main"
     },
     {
-        "src": "https://i.postimg.cc/HkfHtMJb/vicepresident.jpg",
+        "src": "../assets/team/vicepresident.jpg",
         "name": "Mr.Jayesh Kirtane",
         "designation": "VICE PRESIDENT of DSSA.",
         "category": "main"
