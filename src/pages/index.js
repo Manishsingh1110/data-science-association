@@ -39,13 +39,13 @@ export default function Home() {
         "category": "main"
     },
     {
-      "src": "https://i.postimg.cc/59RCMPDJ/treasurer.jpg",
+      "src": "../assets/team/treasurer.jpg",
       "name": "Mr.Rishikumar Yadav",
       "designation": " TREASURER💰 Of DSSA.",
       "category": "main"
   },
   {
-      "src": "https://i.postimg.cc/jqpFZrtn/cultural-head.jpg",
+      "src": "../assets/team/cultural-head.jpg",
       "name": "Ms. Deepti Bare",
       "designation": "Cultural Head of DSSA.",
       "category": "main"
