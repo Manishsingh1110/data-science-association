@@ -10,7 +10,7 @@
     transition: opacity 0.3s linear;
     margin: 0;
     text-decoration: none;
-    font-family: myoverall;
+    /* font-family: myoverall; */
     box-sizing: border-box;
   }
 ::-webkit-scrollbar {
