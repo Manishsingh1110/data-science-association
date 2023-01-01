@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from './footer'
 import Navbar from './navbar'
 const Achievement = () => {
-  var achievement = [
+  var achievement=[
     {
       "description": "Congratulations on the success of our first event! It was a lot of work to plan and execute an event, so it's great to see it pay off. we hope our first event was everything we hoped it would be and that it was a positive experience for all involved.",
       "title": "Maitri 1st event "
@@ -43,7 +43,7 @@ const Achievement = () => {
     {
       "description": "It's great we have more accomplishments to come in the future.our goal is to Keep up the hard work and dedication, and we are sure that we will continue to achieve success in whatever we set our mind to.",
       "title": "still more to come….."
-    },
+    }
   ]
   return (
     <main id="main" className='overflow-x-hidden'>

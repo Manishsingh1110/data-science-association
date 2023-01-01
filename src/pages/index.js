@@ -9,7 +9,6 @@ import { FiInstagram } from 'react-icons/fi';
 import { FiLinkedin } from 'react-icons/fi';
 import { AiOutlineUnorderedList } from 'react-icons/ai';
 import { AiFillGithub } from 'react-icons/ai';
-import { BsFillMoonFill } from 'react-icons/bs';
 import { SlCalender } from 'react-icons/sl';
 import Footer from './footer';
 import { Link } from 'react-router-dom';
@@ -53,7 +52,7 @@ export default function Home() {
       "category": "main"
     }
   ]
-  var achievement = [
+  var achievements = [
     {
       "description": "Congratulations on the success of our first event! It was a lot of work to plan and execute an event, so it's great to see it pay off. we hope our first event was everything we hoped it would be and that it was a positive experience for all involved.",
       "title": "Maitri 1st event "
@@ -255,15 +254,15 @@ export default function Home() {
               <SwiperSlide>
                 <div className="swiper-slide">
                   <div className="testimonial-item">
-                    <p className='text-black md:text-xl text-md font-bold'>
+                    <p className='text-black md:text-xl text-md font-bold'>.
                     </p>
                     <div className="profile mt-auto">
-                      <h3></h3>
+                      <h3>.</h3>
                     </div>
                   </div>
                 </div>
               </SwiperSlide>
-              {(achievement.map((achievements) => {
+              {(achievements.map((achievements) => {
                 return (
                   <SwiperSlide>
                     <div className="swiper-slide">
@@ -282,10 +281,10 @@ export default function Home() {
               <SwiperSlide>
                 <div className="swiper-slide">
                   <div className="testimonial-item">
-                    <p className='text-black md:text-xl text-md font-bold'>
+                    <p className='text-black md:text-xl text-md font-bold'>.
                     </p>
                     <div className="profile mt-auto">
-                      <h3></h3>
+                      <h3>.</h3>
                     </div>
                   </div>
                 </div>
@@ -297,7 +296,7 @@ export default function Home() {
               spaceBetween={5}
               slidesPerView={1}
             > 
-              {(achievement.map((achievements) => {
+              {(achievements.map((achievements) => {
                 return (
                   <SwiperSlide>
                     <div className="swiper-slide">
