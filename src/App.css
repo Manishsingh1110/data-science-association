@@ -1,38 +1,405 @@
-.App {
-  text-align: center;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@font-face {
+    font-family: myoverall;
+    src: url(../public/assets/fonts/LifeSavers-Regular.ttf);
   }
+* {
+    transition: opacity 0.3s linear;
+    margin: 0;
+    text-decoration: none;
+    font-family: myoverall;
+    box-sizing: border-box;
+  }
+::-webkit-scrollbar {
+    width: 0.1px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.title {
+  background: linear-gradient( 180deg,rgba(46, 83, 229, 0.93) 0%,rgba(74, 109, 247, 0.24) 100% );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 900;
+}
+.breadcrumbs {
+  padding: 140px 0 60px 0;
+  min-height: 30vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.breadcrumbs:before {
+  content: "";
+  background-color: rgba(27, 47, 69, 0.7);
+  position: absolute;
+  inset: 0;
+}
+
+.call-to-action {
+  background: linear-gradient(rgba(27, 47, 69, 0.8), rgba(27, 47, 69, 0.8)), url(../public/assets/cta-bg.jpg) center center;
+  background-size: cover;
+  padding: 100px 0;
+}
+.call-to-action {
+  background-attachment: fixed;
+}
+.portfolio .portfolio-item .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+}
+
+.portfolio .portfolio-item:hover .portfolio-info {
+  opacity: 1;
+  bottom: 20px;
+}
+.portfolio .portfolio-item {
+  position: relative;
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position:relative;
+  top: 0;
+  left: 0;
+}
+
+.testimonials .testimonial-item {
+  box-sizing: content-box;
+  padding: 30px;
+  margin: 40px 30px;
+  box-shadow: 0px 10px 10px rgb(5, 0, 0);
+  /* background: #fff; */
+  min-height: 320px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
+  /* transition: 0.3s; */
+}
+
+.testimonials .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+}
+
+.testimonials .testimonial-item h4 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.testimonials .testimonial-item p {
+  margin: 0 auto 15px auto;
+}
+
+.testimonials .swiper-slide {
+  opacity: 0.3;
+}
+
+@media (max-width: 1199px) {
+  .testimonials .swiper-slide-active {
+    opacity: 1;
+  }
+
+  .testimonials .swiper-pagination {
+    margin-top: 0;
+  }
+
+  .testimonials .testimonial-item {
+    margin: 40px 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .testimonials .swiper-slide-next {
+    opacity: 1;
+    transform: scale(1.12);
+  }
+}
+
+
+#about {
+  background: #fff;
+  padding: 60px 0;
+}
+
+#about .about-container .background {
+  margin: 20px 0;
+}
+
+#about .about-container .content {
+  background: #fff;
+}
+
+#about .about-container .title {
+  color: #333;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+#about .about-container p {
+  line-height: 26px;
+}
+
+#about .about-container p:last-child {
+  margin-bottom: 0;
+}
+
+#about .about-container .icon-box {
+  background: #fff;
+  background-size: cover;
+  padding: 0 0 30px 0;
+}
+
+#about .about-container .icon-box .icon {
+  float: left;
+  background: #fff;
+  width: 64px;
+  height: 64px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  transition: all 0.3s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+#about .about-container .icon-box .icon i {
+  color: #007bff;
+  font-size: 24px;
+  line-height: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#about .about-container .icon-box:hover .icon {
+  background: #007bff;
 }
+
+#about .about-container .icon-box:hover .icon i {
+  color: #fff;
+}
+
+#about .about-container .icon-box .title {
+  margin-left: 80px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+#about .about-container .icon-box .title a {
+  color: #283d50;
+}
+
+#about .about-container .icon-box .description {
+  margin-left: 80px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+#about .about-extra {
+  padding-top: 60px;
+}
+
+#about .about-extra h4 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+#team {
+  background: #fff;
+  padding: 60px 0;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+#team .member {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#team .member .member-info {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+}
+
+#team .member .member-info-content {
+  margin-top: 50px;
+  transition: margin 0.2s;
+}
+
+#team .member:hover .member-info {
+  background: rgba(0, 62, 128, 0.7);
+  opacity: 1;
+  transition: 0.4s;
+}
+
+#team .member:hover .member-info-content {
+  margin-top: 0;
+  transition: margin 0.4s;
+}
+
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+
+#team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+
+#team .member .social {
+  margin-top: 15px;
+}
+
+#team .member .social a {
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#team .member .social a:hover {
+  color: #fff;
+}
+
+#team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.spepcial_link {
+  position: relative;
+  text-decoration: none !important;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: .9rem; }
+  .spepcial_link:before {
+    position: absolute;
+    z-index: -1;
+    background: #ffc107;
+    content: "";
+    width: 100%;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    left: 0;
+    bottom: 0;
+    top: 50%;
+    width: 0; }
+  .spepcial_link:hover {
+    color: #000; }
+    .spepcial_link:hover:before {
+      width: 100%; }
+
+
+
+      .team .team-member {
+        overflow: hidden;
+        background: #fff;
+      }
+      
+      .team .team-member .member-img {
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .team .team-member .social {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 40px;
+        opacity: 0;
+        transition: ease-in-out 0.3s;
+        background: rgba(255, 255, 255, 0.85);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .team .team-member .social a {
+        transition: color 0.3s;
+        color: #31547c;
+        margin: 0 10px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .team .team-member .social a i {
+        line-height: 0;
+      }
+      
+      .team .team-member .social a:hover {
+        color: var(--color-primary);
+      }
+      
+      .team .team-member .social i {
+        font-size: 18px;
+        margin: 0 2px;
+      }
+      
+      .team .team-member .member-info {
+        padding: 25px 15px 0 15px;
+        text-align: center;
+      }
+      
+      .team .team-member .member-info h4 {
+        font-weight: 700;
+        margin-bottom: 5px;
+        font-size: 18px;
+        color: var(--color-secondary);
+      }
+      
+      .team .team-member .member-info span {
+        display: block;
+        font-size: 13px;
+        font-weight: 400;
+        color: #6c757d;
+      }
+      
+      .team .team-member .member-info p {
+        font-style: italic;
+        font-size: 14px;
+        line-height: 26px;
+        color: #6c757d;
+      }
+      
+      .team .team-member:hover .social {
+        opacity: 1;
+      }
+
