@@ -45,7 +45,7 @@ export default function Home() {
       "category": "main"
   },
   {
-      "src": "../assets/team/cultural-head.jpg",
+      "src": "../assets/team/cultural_head.jpg",
       "name": "Ms. Deepti Bare",
       "designation": "Cultural Head of DSSA.",
       "category": "main"
