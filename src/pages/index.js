@@ -27,17 +27,29 @@ export default function Home() {
   }, [])
   var Team = [
     {
-        "src": "../assets/team/president.jpg",
+        "src": "https://i.postimg.cc/VvDm9HMN/president.jpg",
         "name": "Mr.Yash Gupta",
         "designation": "PRESIDENT of DSSA.",
         "category": "main"
     },
     {
-        "src": "../assets/team/vicepresident.jpg",
+        "src": "https://i.postimg.cc/HkfHtMJb/vicepresident.jpg",
         "name": "Mr.Jayesh Kirtane",
         "designation": "VICE PRESIDENT of DSSA.",
         "category": "main"
     },
+    {
+      "src": "https://i.postimg.cc/59RCMPDJ/treasurer.jpg",
+      "name": "Mr.Rishikumar Yadav",
+      "designation": " TREASURER💰 Of DSSA.",
+      "category": "main"
+  },
+  {
+      "src": "https://i.postimg.cc/jqpFZrtn/cultural-head.jpg",
+      "name": "Ms. Deepti Bare",
+      "designation": "Cultural Head of DSSA.",
+      "category": "main"
+  }
   ]
 
   return (

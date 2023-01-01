@@ -8,64 +8,89 @@ import { FiLinkedin } from 'react-icons/fi';
 const Teams = () => {
     var Allteam = [
         {
-            "src": "../assets/team/president.jpg",
+            "src": "https://i.postimg.cc/VvDm9HMN/president.jpg",
             "name": "Mr.Yash Gupta",
             "designation": "PRESIDENT of DSSA.",
             "category": "main"
         },
         {
-            "src": "../assets/team/vicepresident.jpg",
+            "src": "https://i.postimg.cc/HkfHtMJb/vicepresident.jpg",
             "name": "Mr.Jayesh Kirtane",
             "designation": "VICE PRESIDENT of DSSA.",
             "category": "main"
         },
         {
-            "src": "../assets/team/cultural_member1.jpg",
+          "src": "https://i.postimg.cc/59RCMPDJ/treasurer.jpg",
+          "name": "Mr.Rishikumar Yadav",
+          "designation": " TREASURER💰 Of DSSA.",
+          "category": "main"
+      },
+      {
+          "src": "https://i.postimg.cc/jqpFZrtn/cultural-head.jpg",
+          "name": "Ms. Deepti Bare",
+          "designation": "Cultural Head of DSSA.",
+          "category": "main"
+      },
+        {
+            "src": "https://i.postimg.cc/Mp4Zr4LM/cultural-member1.jpg",
             "name": "Ms. Nishali Zope",
             "designation": "Cultural  Team",
             "category": "cultural"
         },
         {
-            "src": "../assets/team/cultural_member2.jpg",
+            "src": "https://i.postimg.cc/KjZmMy1V/cultural-member2.jpg",
             "name": "Mr. Onkar Gurav",
             "designation": "Cultural Team",
             "category": "cultural"
         },
         {
-            "src": "../assets/team/cultural_member3.jpg",
+            "src": "https://i.postimg.cc/y8Js9jNV/cultural-member3.jpg",
             "name": "Mr. Manish Singh",
             "designation": "Cultural Team",
             "category": "cultural"
         },
         {
-            "src": "../assets/team/magazine1.jpg",
+            "src": "https://i.postimg.cc/d0yQM6MW/magazine1.jpg",
             "name": "Ms.Srushti Sonawane",
             "designation": " Magizine Co-ordinators of DSSA",
             "category": "main"
         },
         {
-            "src": "../assets/team/magazine2.jpg",
+            "src": "https://i.postimg.cc/SQrSpj5p/magazine2.jpg",
             "name": "Ms.Shaleha Khan",
             "designation": " Magizine Co-ordinators of DSSA",
             "category": "main"
         }, {
-            "src": "../assets/team/pr_marketing.jpg",
+            "src": "https://i.postimg.cc/9MHmc9Cc/pr-marketing.jpg",
             "name": "Mr.Rushikesh Wani",
             "designation": "Promotional Marketing Head of DSSA",
             "category": "main"
         },
         
         {
-            "src": "../assets/team/technical_member1.jpg",
+            "src": "https://i.postimg.cc/x1rNXX0F/technical-head.jpg",
+            "name": "Mr. Tejas Mayekar",
+            "designation": "Technical Head of DSSA",
+            "category": "main"
+        },
+        
+        {
+            "src": "https://i.postimg.cc/d1Rq30Vr/technical-member1.jpg",
             "name": "Mr.Suyash Shinde",
-            "designation": "technical Team of DSSA",
+            "designation": "Technical Team of DSSA",
             "category": "technical"
         },
         {
-            "src": "../assets/team/technical_member2.jpg",
+            "src": "https://i.postimg.cc/fTqMJpD2/technical-member2.jpg",
             "name": "Ms.Siddika Battula",
-            "designation": "technical Team of DSSA",
+            "designation": "Technical Team of DSSA",
             "category": "technical"
+        },
+        {
+            "src": "https://i.postimg.cc/RVJnC7zH/sports-member.jpg",
+            "name": "Mr.Samarth Khade",
+            "designation": "Sports Head of DSSA",
+            "category": "sports"
         }
 
     ]
@@ -102,7 +127,7 @@ const Teams = () => {
                     </div>
                     <ul className="portfolio-flters justify-evenly pb-10 px-5 md:px-20 lg:px-80 flex flex-wrap" data-aos="fade-up" data-aos-delay="100">
                         <button type="button" onClick={() => setall()} className="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-1 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">All</button>
-                        <button type="button" onClick={() => filteritem("main")} className="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring1 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">Main team</button>
+                        <button type="button" onClick={() => filteritem("main")} className="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring1 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">Head team</button>
                         <button type="button" onClick={() => filteritem("cultural")} className="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring1 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">Cultural team</button>
                         <button type="button" onClick={() => filteritem("sports")} className="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring1 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">Sports team</button>
                         <button type="button" onClick={() => filteritem("technical")} className="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring1 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">Technical team</button>

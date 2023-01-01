@@ -16,22 +16,22 @@ const GalleryComponent = () => {
                     </div>
                     <div className="flex flex-wrap md:-m-2 -m-1">
                         <div className="flex flex-wrap w-full md:w-1/2">
-                            <div className="md:p-2 p-1 w-full  md:w-1/2" data-aos="zoom-in" data-aos-delay="300">
-                                <img alt="gallery" className="w-full object-cover h-full object-center block grayscale-0" src="../assets/gallery/gallerycomponent/Gallery_1.jpg" />
+                            <div className="md:p-2 p-1 w-full  md:w-1/2" data-aos="zoom-in" data-aos-delay="100">
+                                <img alt="gallery" className="w-full object-cover h-full object-center block grayscale-0" src="https://i.postimg.cc/0NSf6zKt/Gallery1.jpg" />
                             </div>
-                            <div className="md:p-2 p-1 w-full md:w-1/2" data-aos="zoom-in" data-aos-delay="300">
-                                <img alt="gallery" className="w-full object-cover h-full object-center block" src="../assets/gallery/gallerycomponent/Gallery_2.jpg" />
+                            <div className="md:p-2 p-1 w-full md:w-1/2" data-aos="zoom-in" data-aos-delay="100">
+                                <img alt="gallery" className="w-full object-cover h-full object-center block" src="https://i.postimg.cc/pL4CXfrh/Gallery2.jpg" />
                             </div>
-                            <div className="md:p-2 p-1 w-full md:w-full" data-aos="zoom-in" data-aos-delay="300">
-                                <img alt="gallery" className="w-full h-full object-cover object-center block " src="../assets/gallery/gallerycomponent/Gallery_3.jpg" />
+                            <div className="md:p-2 p-1 w-full md:w-full" data-aos="zoom-in" data-aos-delay="100">
+                                <img alt="gallery" className="w-full h-full object-cover object-center block " src="https://i.postimg.cc/HxCtbTQT/Gallery3.jpg" />
                             </div>
                         </div>
-                        <div className="flex flex-wrap w-full md:w-1/2" data-aos="zoom-in" data-aos-delay="300">
-                            <div className="md:p-2 p-1 w-full md:w-full" data-aos="zoom-in" data-aos-delay="300">
-                                <img alt="gallery" className="w-full h-full object-cover object-center block" src="../assets/gallery/gallerycomponent/Gallery_4.jpg" />
+                        <div className="flex flex-wrap w-full md:w-1/2" data-aos="zoom-in" data-aos-delay="100">
+                            <div className="md:p-2 p-1 w-full md:w-full" data-aos="zoom-in" data-aos-delay="100">
+                                <img alt="gallery" className="w-full h-full object-cover object-center block" src="https://i.postimg.cc/fLjfK1Km/Gallery4.jpg" />
                             </div>
-                            <div className="md:p-2 p-1 w-full md:w-full" data-aos="zoom-in" data-aos-delay="300">
-                                <img alt="gallery" className="w-full object-cover h-full object-center block" src="../assets/gallery/gallerycomponent/Gallery_5.jpg" />
+                            <div className="md:p-2 p-1 w-full md:w-full" data-aos="zoom-in" data-aos-delay="100">
+                                <img alt="gallery" className="w-full object-cover h-full object-center block" src="https://i.postimg.cc/1XmcYMCT/Gallery5.jpg" />
                             </div>
                         </div>
                     </div>

@@ -4,24 +4,30 @@ import Navbar from './navbar'
 const Gallerys = () => {
     var galleryphotos = [
         {
-            "src": "../assets/gallery/Gallery1.jpg",
+            "src": "https://i.postimg.cc/0NSf6zKt/Gallery1.jpg",
             "place": "events",
             "description": "Lorem ipsum, dolor sit amet consectetur",
             "category": "events"
         },
         {
-            "src": "../assets/gallery/Gallery2.jpg",
+            "src": "https://i.postimg.cc/pL4CXfrh/Gallery2.jpg",
             "place": "days",
             "description": "Lorem ipsum, dolor sit amet consectetur",
             "category": "days"
         },  {
-            "src": "../assets/gallery/Gallery3.jpg",
+            "src": "https://i.postimg.cc/HxCtbTQT/Gallery3.jpg",
             "place": "nakshatra",
             "description": "Lorem ipsum, dolor sit amet consectetur",
             "category": "nakshatra"
         },
         {
-            "src": "../assets/gallery/Gallery4.jpg",
+            "src": "https://i.postimg.cc/fLjfK1Km/Gallery4.jpg",
+            "place": "sports",
+            "description": "Lorem ipsum, dolor sit amet consectetur",
+            "category": "sports"
+        },
+        {
+            "src": "https://i.postimg.cc/1XmcYMCT/Gallery5.jpg",
             "place": "sports",
             "description": "Lorem ipsum, dolor sit amet consectetur",
             "category": "sports"

@@ -38,7 +38,7 @@ export default function Navbarindex(props) {
       <nav className={`${height ? "px-2 sm:px-4 py-2.5 bg-slate-800 opacity-90 fixed w-full z-20 top-0 left-0" : "px-2 sm:px-4 py-2.5 bg-transparent fixed w-full z-20 top-0 left-0 "}`}>
         <div className="container flex flex-wrap px-4 items-center md:px-20 mx-auto" style={{ justifyContent: "space-between" }}>
           <Link to="/" className="flex items-center justify-center ">
-            <img src="../assets/logo-no-background.png" className="h-6 mr-3 sm:h-10" alt="Data Science" />
+            <img src="https://i.postimg.cc/KvJfMXqM/logo-no-background.png" className="h-6 mr-3 sm:h-10" alt="Data Science" />
           </Link>
           <div className="flex items-center md:hidden  md:order-2">
             <button data-collapse-toggle="navbar-multi-level" type="button" onClick={handleclicknav} className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden to focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 bg-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-multi-level" aria-expanded="false">
