@@ -58,7 +58,7 @@ export default function Navbar(props) {
               </li>
 
               <li>
-                <Link to="/contact" className="block py-2 pl-1   md:border-0  md:p-0 text-white  ">Contact</Link>
+                <Link to="/achievement" className="block py-2 pl-1  md:border-0  md:p-0 text-white  ">Achievements</Link>
               </li>
             </ul>
           </div>

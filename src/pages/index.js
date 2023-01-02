@@ -12,6 +12,8 @@ import { AiFillGithub } from 'react-icons/ai';
 import { SlCalender } from 'react-icons/sl';
 import Footer from './footer';
 import { Link } from 'react-router-dom';
+import achievements from '../data/achievements';
+import Hometeam from '../data/hometeam';
 export default function Home() {
   const [height, setheight] = useState(false)
   useEffect(() => {
@@ -26,75 +28,7 @@ export default function Home() {
     window.scrollTo(0, 0)
     window.addEventListener('scroll', fun2);
   }, [])
-  var Team = [
-    {
-      "src": "../assets/team/president.jpg",
-      "name": "Mr.Yash Gupta",
-      "designation": "PRESIDENT of DSSA.",
-      "category": "main"
-    },
-    {
-      "src": "../assets/team/vicepresident.jpg",
-      "name": "Mr.Jayesh Kirtane",
-      "designation": "VICE PRESIDENT of DSSA.",
-      "category": "main"
-    },
-    {
-      "src": "../assets/team/treasurer.jpg",
-      "name": "Mr.Rishikumar Yadav",
-      "designation": " TREASURER💰 Of DSSA.",
-      "category": "main"
-    },
-    {
-      "src": "../assets/team/cultural_head.jpg",
-      "name": "Ms. Deepti Bare",
-      "designation": "Cultural Head of DSSA.",
-      "category": "main"
-    }
-  ]
-  var achievements = [
-    {
-      "description": "Congratulations on the success of our first event! It was a lot of work to plan and execute an event, so it's great to see it pay off. we hope our first event was everything we hoped it would be and that it was a positive experience for all involved.",
-      "title": "Maitri 1st event "
-    },
-    {
-      "description": "We have been recognized for our work with blood donation through the National Service Scheme (NSS). That is a great accomplishment! Blood donation is an important way to help others and save lives, and it's wonderful to see our efforts recognized with an award. ",
-      "title": "Best association award in Blood donation by nss"
-    },
-    {
-      "description": "It's no small feat to place in a competition, and it's a testament to our skill and dedication. we hope to continue and enjoy playing mobile games and have fun competing in them.",
-      "title": "2nd position in bgmi"
-    },
-    {
-      "description": "Congratulations to the player(Kavya) on achieving first place in a 100m running competition! That's a great accomplishment and a testament to her hard work and dedication to training. we hope her to continue  work on your running and participate in competitions in the future",
-      "title": "1st in 100m running"
-    },
-    {
-      "description": "Congratulations to the players(Nicky,kavya,Anjali) on achieving first place in a 4*100m relay competition! That's a great accomplishment and a testament to ther hard work and dedication to training. we hope that they  continue  work on your running and participate in competitions in the future.",
-      "title": "1st in 4*100m relay"
-    },
-    {
-      "description": "Congratulations on the success of our first event!as an individual association It was a lot of work to plan and execute an event, so it's great to see it pay off. we hope our first event was everything we hoped it would be and that it was a positive experience for all involved.",
-      "title": "1st event ds unite"
-    },
-    {
-      "description": "We have been recognized for our work with blood donation through the National Service Scheme (NSS). That is a great accomplishment! Blood donation is an important way to help others and save lives, and it's wonderful to see our efforts recognized with an award.",
-      "title": "2 best association in blood donation camp held by nss"
-    },
-    {
-      "description": "second place in a rangoli competition! Rangoli is a beautiful and intricate art form, and it takes skill and dedication to create a design that is worthy of recognition. we hope to continue to enjoy creating rangoli and participating in competitions. ",
-      "title": "2nd in rangoli compitition"
-    },
-    {
-      "description": "It's great to hear that a students from your Ds participated in a hackathon at the Indian Institute of Technology in Varanasi. Hackathons are a great opportunity for students to learn new skills, collaborate with others, and develop innovative solutions to problems.",
-      "title": "DS student particated in hackathon in iit Varanasi"
-    },
-    ,
-    {
-      "description": "It's great we have more accomplishments to come in the future.our goal is to Keep up the hard work and dedication, and we are sure that we will continue to achieve success in whatever we set our mind to.",
-      "title": "still more to come….."
-    },
-  ]
+
   return (
     <>
       <video playsInline autoPlay muted loop id="bgvid" className='shadow-2xl shadow-slate-800 saturate-150'>
@@ -109,7 +43,7 @@ export default function Home() {
             <br class=" lg:inline-block "></br>
             <span className=' bg-white rounded 
          bg-clip-text  text-transparent 
-            animate-text p-3 md:text-5xl text-3xl font-extrabold	 uppercase '>Data Science Student Association</span>
+            animate-text p-3 md:text-5xl text-3xl font-extrabold text1	 uppercase '>Data Science Student Association</span>
           </h1>
           <div className="flex justify-center about-container">
             <div className="icon-box " data-aos="fade-up" data-aos-delay="100">
@@ -249,7 +183,6 @@ export default function Home() {
             <Swiper
               spaceBetween={50}
               slidesPerView={3}
-
             >
               <SwiperSlide>
                 <div className="swiper-slide">
@@ -267,11 +200,11 @@ export default function Home() {
                   <SwiperSlide>
                     <div className="swiper-slide">
                       <div className="testimonial-item">
-                        <p className='text-black md:text-xl text-md font-bold'>
+                        <p className='text-black text-md font-bold'>
                           {achievements.description}
                         </p>
                         <div className="profile mt-auto">
-                          <h3>{achievements.title}</h3>
+                          <h1 className='text-2xl text1 pb-5'>{achievements.title}</h1>
                         </div>
                       </div>
                     </div>
@@ -281,7 +214,7 @@ export default function Home() {
               <SwiperSlide>
                 <div className="swiper-slide">
                   <div className="testimonial-item">
-                    <p className='text-black md:text-xl text-md font-bold'>.
+                    <p className='text-black  text-md font-bold'>.
                     </p>
                     <div className="profile mt-auto">
                       <h3>.</h3>
@@ -305,7 +238,7 @@ export default function Home() {
                           {achievements.description}
                         </p>
                         <div className="profile mt-auto">
-                          <h3>{achievements.title}</h3>
+                          <h3 className='text-4xl text1 pb-5'>{achievements.title}</h3>
                         </div>
                       </div>
                     </div>
@@ -323,7 +256,7 @@ export default function Home() {
             <p className='lg:px-56 md:px-20 px-5 pt-5 pb-5'>our Team work together towards a common goal or purpose.we have Teams within our main Team that focused on specific projects, events, or initiatives, and they may be responsible for planning, organizing, and implementing vaious activities. Team members may have different roles and responsibilities within our team, and they  work together to coordinate their efforts and achieve  goals.</p>
           </header>
           <div className="flex flex-wrap text-center px-4 md:px-20 lg:px-40">
-            {(Team.map((Teammember) => {
+            {(Hometeam.map((Teammember) => {
               return (
                 <div className="lg:w-1/4 w-1/2   overflow-hidden p-2" key={Teammember.src} data-aos="zoom-out" data-aos-delay="100">
                   <div class="team-member">

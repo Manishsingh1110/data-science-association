@@ -1,45 +1,14 @@
 import React, { useState } from 'react'
 import Footer from './footer'
 import Navbar from './navbar'
+import galleryphotos from '../data/galleryphotos'
 const Gallerys = () => {
-    var galleryphotos = [
-        {
-            "src": "https://i.postimg.cc/0NSf6zKt/Gallery1.jpg",
-            "place": "events",
-            "description": "Lorem ipsum, dolor sit amet consectetur",
-            "category": "events"
-        },
-        {
-            "src": "https://i.postimg.cc/pL4CXfrh/Gallery2.jpg",
-            "place": "days",
-            "description": "Lorem ipsum, dolor sit amet consectetur",
-            "category": "days"
-        },  {
-            "src": "https://i.postimg.cc/HxCtbTQT/Gallery3.jpg",
-            "place": "nakshatra",
-            "description": "Lorem ipsum, dolor sit amet consectetur",
-            "category": "nakshatra"
-        },
-        {
-            "src": "https://i.postimg.cc/fLjfK1Km/Gallery4.jpg",
-            "place": "sports",
-            "description": "Lorem ipsum, dolor sit amet consectetur",
-            "category": "sports"
-        },
-        {
-            "src": "https://i.postimg.cc/1XmcYMCT/Gallery5.jpg",
-            "place": "sports",
-            "description": "Lorem ipsum, dolor sit amet consectetur",
-            "category": "sports"
-        }
-    ]
     const [photos, setphotos] = useState(galleryphotos)
     const filteritem = (cat) => {
         const updatedphotos = galleryphotos.filter((ele) => {
             return ele.category === cat;
         })
         setphotos(updatedphotos)
-
     }
     const setall = () => {
         setphotos(galleryphotos)

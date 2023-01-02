@@ -124,7 +124,7 @@ video {
 }
 
 .testimonials .testimonial-item p {
-  margin: 0 auto 10px auto;
+  margin: 0 auto 5px auto;
 }
 
 .testimonials .swiper-slide {
@@ -141,7 +141,7 @@ video {
   }
 
   .testimonials .testimonial-item {
-    margin: 40px 20px;
+    margin: 10px 20px;
   }
 }
 
