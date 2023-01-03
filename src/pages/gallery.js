@@ -3,7 +3,17 @@ import Footer from './footer'
 import Navbar from './navbar'
 import galleryphotos from '../data/galleryphotos'
 const Gallerys = () => {
-    const [photos, setphotos] = useState(galleryphotos)
+    function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            let j = Math.floor(Math.random() * (i + 1));
+            let temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+        return array;
+    }
+    const result = shuffle(galleryphotos);
+    const [photos, setphotos] = useState(result)
     const filteritem = (cat) => {
         const updatedphotos = galleryphotos.filter((ele) => {
             return ele.category === cat;
@@ -11,7 +21,17 @@ const Gallerys = () => {
         setphotos(updatedphotos)
     }
     const setall = () => {
-        setphotos(galleryphotos)
+        function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                let j = Math.floor(Math.random() * (i + 1));
+                let temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+            return array;
+        }
+        const result = shuffle(galleryphotos);
+        setphotos(result)
     }
     return (
         <main id="main" className='overflow-x-hidden'>
@@ -42,10 +62,6 @@ const Gallerys = () => {
                                 return (
                                     <div key={singlephoto.src} data-aos="fade-up" className="lg:w-1/3 md:w-1/2 w-full h-64 overflow-y-hidden py-3 px-5 portfolio-item filter-app">
                                         <img src={singlephoto.src} alt="" />
-                                        <div className="portfolio-info">
-                                            <h4>{singlephoto.place}</h4>
-                                            <p>{singlephoto.description}</p>
-                                        </div>
                                     </div>
                                 )
                             }))}

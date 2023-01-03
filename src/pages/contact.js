@@ -22,11 +22,11 @@ const Contacts = () => {
                             <div className="info-item py-3 flex">
                                 <div>
                                     <h4>Location:</h4>
-                                    <p>
-                                    A108 shweta Street <br />
-                                    Kamatipura, mumbai 535<br />
-                                    India <br /><br />
-                                </p>
+                                    <p>Saraswati College of Engineering ,<br />
+                                 Plot No. 46 Sector 5 <br /> Near MSEB Sub Station,<br />
+                                Kharghar, Navi Mumbai 410210<br />
+                                India <br /><br />
+                            </p>
                                 </div>
                             </div>
                             <div className="info-item py-3 flex">
